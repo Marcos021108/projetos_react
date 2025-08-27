@@ -1,21 +1,16 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld';
-import Frase from './components/Frase';
-import DigaMeuNome from './components/DigaMeuNome';
+import Evento from './components/Evento.js'
+import Formulario from './components/Formulari.js';
 
 function App(){
 
-  const nome = "Claudin"
-
   return (
     <div className="App">
-      <h1>MEU APP REACT</h1>
-      <HelloWorld/>
-      <Frase />
-      <DigaMeuNome nome= "Cleiton"/>
-      <DigaMeuNome nome= "Kleberiano"/>
-      <DigaMeuNome nome= {nome}/>
-
+      <h1>Testando Eventos</h1>
+      <Evento numero="1"/>
+      <Evento numero="2"/>
+      <Evento numero="3"/>
+      <Formulario/>
     </div>
   );
 }
